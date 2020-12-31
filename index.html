@@ -9,6 +9,7 @@
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css">
+    <script></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                     src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31">
             </a>
             <ul class="main-nav">
-                <li class="hamburger-btn"><i class="fas fa-bars"></i></li>
+                <li class="hamburger-btn" onclick="myFunction()"><i class="fas fa-bars"></i></li>
                 <li class="navbar-links"><a href="#">Microsoft 365</a></li>
                 <li class="navbar-links"><a href="#">Office</a></li>
                 <li class="navbar-links"><a href="#">Windows</a></li>
@@ -228,22 +229,35 @@
             </ul>
         </div>
     </section>
-     <!-- Footer -->
-     <footer class="section-footer">
+    <!-- Footer -->
+    <footer class="section-footer">
         <div class="footer-bottom">
-        <div>
-            <i class="fas fa-globe fa-2x"></i> English (India)
+            <div>
+                <i class="fas fa-globe fa-2x"></i> English (India)
+            </div>
+            <ul>
+                <li><a href="#">Contact Microsoft</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Trademarks</a></li>
+                <li><a href="#">About our ads</a></li>
+                <li><a href="#">&copy; Microsoft 2020</a></li>
+            </ul>
         </div>
-        <ul>
-            <li><a href="#">Contact Microsoft</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms of use</a></li>
-            <li><a href="#">Trademarks</a></li>
-            <li><a href="#">About our ads</a></li>
-            <li><a href="#">&copy; Microsoft 2020</a></li>
-        </ul>
-        </div>
-      </footer>
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.querySelectorAll(".navbar-links");
+            for (var i = 0; i < x.length; i++) {
+                if (x[i].style.display === "none") {
+                    x[i].style.display = "block";
+                } else {
+                    x[i].style.display = "none";
+                }
+            }
+
+        }
+    </script>
 </body>
 
 </html>

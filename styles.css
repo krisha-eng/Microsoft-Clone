@@ -59,6 +59,9 @@ nav a img {
     height: auto; 
     margin-left: 0.5em;
 }
+nav .navbar-links {
+    display: block;
+}
 .main-nav {
     flex: 1;
 }
@@ -284,13 +287,20 @@ a:hover i {
         display: none;
         width: 100%;
         padding: 15px 30px;
+        border-bottom: #ccc solid 1px;
+        opacity: 0.9;
         margin: 0;
         text-align: center;
         background-color: #F2F2F2;
+        /* transform: translateX(-500px); */
+        /* transition: transform 0.5s ease-in-out; */
     }
     .main-nav li:nth-child(2) {
         margin-top: 2rem;
     }
+    /* .main-nav li:last-child {
+        padding-bottom: 280px;
+    } */
     nav a img {
         position: absolute;
         left: 0;
@@ -321,10 +331,10 @@ a:hover i {
         margin: 1.5em 1em;
     }
     .section-cards-2 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     .section-cards-4 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     .footer {
         grid-template-columns: repeat(1, 1fr);
