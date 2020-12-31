@@ -21,6 +21,7 @@ h2, h3 {
     left: 35px;
     top: 23px;
     z-index: 1;
+    cursor: pointer;
 }
 nav {
     display: flex;
